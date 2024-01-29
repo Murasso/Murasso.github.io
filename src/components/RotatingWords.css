@@ -1,0 +1,43 @@
+/* RotatingWords.css */
+
+.rotating-words {
+  font-size: 2rem; /* Adjust font size as needed */
+  color: white; /* Set color to white */
+}
+
+.txt-rotate {
+  display: inline-block;
+  white-space: nowrap;
+  /* Remove overflow: hidden; */
+  position: relative;
+}
+
+.wrap {
+  display: inline-block;
+}
+
+.white-text {
+  position: relative;
+}
+
+.cursor-line {
+  position: absolute;
+  bottom: -3px; /* Adjust position as needed */
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  animation: cursorBlink 0.8s infinite;
+}
+
+@keyframes cursorBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
