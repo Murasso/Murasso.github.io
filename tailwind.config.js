@@ -28,6 +28,13 @@ export default {
       },
       content: {
         brush: "url('./assets/brush.png')",
+        brush1: "url('./assets/brush1.png')",
+        brush2: "url('./assets/brush2.png')",
+        brush4: "url('./assets/brush4.png')",
+        brush5: "url('./assets/brush5.png')",
+        brush7: "url('./assets/brush7-min.png')",
+        brush8: "url('./assets/brush8.png')",
+        brush2: "url('./assets/brush2.png')",
         person1: "url('./assets/person-1.png')",
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",

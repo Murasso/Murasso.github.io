@@ -38,6 +38,7 @@ const RotatingWords = () => {
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex((prevIndex) => prevIndex - 1);
+      
       setDelta(500);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
@@ -50,7 +51,7 @@ const RotatingWords = () => {
   };
 
   return (
-    <span className="rounded-sm font-semibold rotating-words">
+    <span className="rounded-sm z-[100] font-semibold rotating-words">
       {`Hi! I'm So `}
       <span className="rounded-sm font-semibold txt-rotate white-text" data-period="1000" data-rotate='["Web Developer", "Web Designer", "UI/UX Designer"]'>
         <span className="wrap">{text}</span>

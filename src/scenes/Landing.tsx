@@ -1,9 +1,8 @@
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImage from './assets/profile-image.png'
-import RotatingWords from "../components/RotateWords";
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import RotatingWords from "../components/RotateWords"
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -13,29 +12,29 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-2/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10 before:rounded-t-[400px]
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
             <img
               alt="profile"
-              className="rounded-t-[400px] z-10 w-full max-w-[100px] md:max-w-[400px]"
+              className="rounded-t-[400px] z-10 w-full max-w-[80px] md:max-w-[300px]"
               src="/So4.jpg"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="rounded-t-[400px] mb-10 z-10 w-full max-w-[300px] md:max-w-[500px]"
             src="/So4.jpg"
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-3/5 mt-12 md:mt-32">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -47,24 +46,24 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl font-playfair z-10 text-center md:text-start">
             So {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[90px] before:z-[-1]"
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush5
+              before:absolute before:-left-[35px] before:-top-[210px] before:z-[-10]"
             >
               Murakami
             </span>
           </p>
 
-          <p className="mt-10 mb-4 text-sm text-center md:text-start">
+          <p className="mt-40 mb-10 text-sm text-center md:text-start">
           <RotatingWords />
           </p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -75,7 +74,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-blue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
@@ -83,18 +82,18 @@ const Landing = ({ setSelectedPage }) => {
             Contact Me
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-blue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="bg-deep-blue hover:text-blue transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
               Let's talk.
             </div>
           </AnchorLink>
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
