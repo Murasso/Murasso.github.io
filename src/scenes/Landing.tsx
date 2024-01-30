@@ -56,7 +56,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-40 mb-10 text-center">
+          <p className="mt-10 xs:mt-40 mb-10 text-center">
           <RotatingWords />
           </p>
         </motion.div>
