@@ -2,7 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import RotatingWords from "../components/RotateWords"
+import RotatingWords from "../components/RotatingWords"
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -49,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             So {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush5
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 before:content-brush5
               before:absolute before:-left-[35px] before:-top-[210px] before:z-[-10]"
             >
               Murakami
