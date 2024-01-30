@@ -46,24 +46,24 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl mt-10 font-playfair z-10 text-center">
             So {""}
             <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 before:content-brush5
-              before:absolute before:-left-[35px] before:-top-[210px] before:z-[-10]"
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush5
+              before:absolute before:-left-[35px] before:-top-[210px] before:z-[-1]"
             >
               Murakami
             </span>
           </p>
 
-          <p className="mt-40 mb-10 text-sm text-center md:text-start">
+          <p className="mt-40 mb-10 text-center">
           <RotatingWords />
           </p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex justify-center md:justify-start"
+          className="flex justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -93,7 +93,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="flex justify-center md:justify-start"
+          className="flex justify-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

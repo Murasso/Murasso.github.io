@@ -46,7 +46,7 @@ const RotatingWords = () => {
   };
 
   return (
-    <span className="rounded-sm z-[100] font-semibold rotating-words">
+    <span className="rounded-sm font-semibold rotating-words">
       {`Hi! I'm So `}
       <span className="rounded-sm font-semibold txt-rotate white-text" data-period="1000" data-rotate={JSON.stringify(toRotate)}>
         <span className="wrap">{text}</span>
