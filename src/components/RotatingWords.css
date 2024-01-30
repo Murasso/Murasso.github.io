@@ -22,7 +22,7 @@
 
 .cursor-line {
   position: absolute;
-  bottom: -5px; /* Adjust position as needed */
+  bottom: -4px; /* Adjust position as needed */
   right: 0;
   height: 2px;
   width: 15px;
