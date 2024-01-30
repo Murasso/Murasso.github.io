@@ -46,7 +46,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl mt-10 font-playfair z-10 text-center">
+          <p className="text-6xl pb-5 font-playfair z-10 text-center">
             So {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush5
@@ -56,7 +56,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 xs:mt-40 mb-10 text-center">
+          <p className="mt-10 z-1 xs:mt-20 mb-3 text-center">
           <RotatingWords />
           </p>
         </motion.div>
