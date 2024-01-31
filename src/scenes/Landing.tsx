@@ -46,17 +46,17 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl pb-5 font-playfair z-10 text-center">
+          <p className="text-6xl pb-12 font-playfair z-10 text-center">
             So {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush5
-              before:absolute before:-left-[35px] before:-top-[210px] before:z-[-1]"
+              before:absolute before:-left-[35px] before:-top-[220px] before:z-[-1]"
             >
               Murakami
             </span>
           </p>
 
-          <p className="mt-10 z-1 xs:mt-20 mb-3 text-center">
+          <p className="mt-10 z-1 xs:mt-20 mb-7 text-center">
           <RotatingWords />
           </p>
         </motion.div>
@@ -75,12 +75,13 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-blue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
+              hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
+
           <AnchorLink
             className="rounded-r-sm bg-blue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
@@ -90,6 +91,7 @@ const Landing = ({ setSelectedPage }) => {
               Let's talk.
             </div>
           </AnchorLink>
+
         </motion.div>
 
         <motion.div

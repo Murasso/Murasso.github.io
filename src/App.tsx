@@ -6,6 +6,8 @@ import useMediaQuery from "./hooks/useMediaQuery"
 import './App.css'
 import LineGradient from "./components/LineGradient"
 import MySkills from "./scenes/MySkills"
+import Projects from "./scenes/Projects"
+import Contact from "./scenes/Contact"
 function App() {
   const [selectedPage, setSelectedPage] = useState('home')
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -36,8 +38,16 @@ function App() {
         <Landing setSelectedPage={setSelectedPage}/>
       </div>
       <LineGradient/>
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 md:mb-80 mx-auto md:h-full">
           <MySkills/>
+      </div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto">
+          <Projects/>
+      </div>
+      <LineGradient/>
+      <div className="w-5/6 mx-auto">
+          <Contact/>
       </div>
     </div>
   )
