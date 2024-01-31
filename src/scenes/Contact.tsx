@@ -66,7 +66,7 @@ const Contact = ()=> {
                     <form
                         target="_blank"
                         onSubmit={onSubmit}
-                        action=""
+                        action="https://formsubmit.co/sou04136@gmail.com"
                         method="POST"
                     >
                         <input className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
@@ -84,14 +84,42 @@ const Contact = ()=> {
                             </p>
                         )}
 
-                        <input className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+                        <input className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
                             type="text"
-                            placeholder="NAME"
-                            {...register("name",{
+                            placeholder="EMAIL"
+                            {...register("email",{
                                 required:true,
-                                maxLength:100,
+                                pattern:/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                             })}
                         />
+                        {errors.email &&(
+                            <p className="text-red mt-1">
+                                {errors.email.type === 'required' && "This field is required"}
+                                {errors.email.type === 'pattern'&& "Invalid email address"}
+                            </p>
+                        )}
+                        <textarea className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+                            type="text"
+                            placeholder="MESSAGE"
+                            rows="4"
+                            cols="50"
+                            {...register("message",{
+                                required:true,
+                                maxLength:2000
+                            })}
+                        />
+                        {errors.message &&(
+                            <p className="text-red mt-1">
+                                {errors.message.type === 'required' && "This field is required"}
+                                {errors.message.type === 'maxLength'&& "Max length is 2000 char"}
+                            </p>
+                        )}
+                        <button
+                        type="submit"
+                        className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red
+                        hover:text-white transition duration-500">
+                            SEND ME A MESSAGE
+                        </button>
                     </form>
                 </motion.div>
             </div>

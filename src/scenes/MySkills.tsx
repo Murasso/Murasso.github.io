@@ -11,47 +11,30 @@ const MySkills = () => {
             {/* HEADER AND IMAGE SECTION */}
             <div className="md:flex md:justify-between md:gap-16 mt-32">
             <motion.div
-                className="md:w-1/3"
+                className="md:w-2/5 mx-auto text-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
+                transition={{ duration: 0.5 }}
                 variants={{
-                    hidden: { opacity: 0, x: -50 },
-                    visible: { opacity: 1, x: 0 },
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
                 }}
-             >
+            >
                 <p className="font-playfair font-semibold text-4xl mb-5">
                     MY <span className="text-blue">SKILLS</span>
                 </p>
-                <LineGradient width="w-1/3"/>
+                <div className="flex justify-center mt-5">
+                    <LineGradient width="w-2/3" />
+                </div>
+
 
                 <p className="mt-10 mb-7">
-                    Helloooooo
+                    These are some of the technologies I have experience with
 
                 </p>
                 </motion.div>
-                <div className="mt-16 md:mt-0">
-                    {isAboveMediumScreens ? (
-                    <div
-                        className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-                        before:w-full md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-                      >
-                        <img
-                          alt="skills"
-                          className="z-10"
-                          src="/skills-image.png"
-                        />
-                        </div>
-                    ):(
-                        <img
-                          alt="skills"
-                          className="z-10"
-                          src="/skills-image.png"
-                        />
-                    )}
 
-                </div>
 
             </div>
 
