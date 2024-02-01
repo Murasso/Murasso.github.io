@@ -8,6 +8,8 @@ import LineGradient from "./components/LineGradient"
 import MySkills from "./scenes/MySkills"
 import Projects from "./scenes/Projects"
 import Contact from "./scenes/Contact"
+import Footer from "./scenes/Footer"
+import MyTimeline from "./scenes/Timeline"
 function App() {
   const [selectedPage, setSelectedPage] = useState('home')
   const [isTopOfPage, setIsTopOfPage] = useState(true)
@@ -46,9 +48,20 @@ function App() {
           <Projects/>
       </div>
       <LineGradient/>
+      <div className="w-5/6 pb:10 md:mt-10 mx-auto md:h-full">
+          <MyTimeline/>
+      </div>
+      <div className="w-5/6 mx-auto md:h-full">
+
+      </div>
+      <div className="w-5/6 mx-auto md:h-full">
+
+      </div>
+      <LineGradient/>
       <div className="w-5/6 mx-auto">
           <Contact/>
       </div>
+      <Footer/>
     </div>
   )
 }

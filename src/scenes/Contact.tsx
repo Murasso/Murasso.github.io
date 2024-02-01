@@ -20,6 +20,7 @@ const Contact = ()=> {
         <section id="contact" className="py-48">
             {/* HEADINGS */}
             <motion.div
+                className="flex justify-end w-full"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
@@ -31,10 +32,10 @@ const Contact = ()=> {
             >
                 <div>
                     <p className="font-playfair font-semibold text-4xl">
-                    <span className="text-yellow">Contact me</span>
+                    <span className="text-yellow">CONTACT ME</span>
                     </p>
                     <div className="flex md:justify-end my-5">
-                        <LineGradient width="mx-auto w-2/4" />
+                        <LineGradient width="w-1/2" />
                     </div>
                 </div>
             </motion.div>
@@ -66,7 +67,7 @@ const Contact = ()=> {
                     <form
                         target="_blank"
                         onSubmit={onSubmit}
-                        action="https://formsubmit.co/sou04136@gmail.com"
+                        action="https://formsubmit.co/71ee7ca4c37c513ffb2caadf35526b35"
                         method="POST"
                     >
                         <input className="w-full bg-blue font-semibold placeholder-opaque-black p-3"

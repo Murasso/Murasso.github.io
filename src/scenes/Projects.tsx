@@ -50,16 +50,14 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-          PRO<span className="text-blue">JECTS</span>
+          <span className="text-blue">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-2/3" />
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          During my university years, I worked on several projects, including personal ones and projects at internship companies.
         </p>
       </motion.div>
 
@@ -77,7 +75,7 @@ const Projects = () => {
             className="flex justify-center text-center items-center p-10 bg-red
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            SOLID KNOWLEDGE IN BACKEND
           </div>
           <a href="https://pomotimer-g5gj.onrender.com/" target="_blank" rel="noreferrer">
             <Project title="Project 1" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
