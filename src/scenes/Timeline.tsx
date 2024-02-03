@@ -18,26 +18,26 @@ const MyTimeline = () => {
         <VerticalTimelineElement
           contentStyle={{ background: "#2CBCE9", color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
-          date="2019 - Present"
+          date="Present"
         >
-          <p className="vertical-timeline-element-title">Senior studying math at Osaka University</p>
+          <p className="vertical-timeline-element-title">Senior studying math at Osaka University (from 2019)</p>
           <h3 className="vertical-timeline-element-subtitle">Specializing in Martingale theory and Probability theory</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ background: "#2CBCE9", color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
-          date="2023, Sep - Present"
+          date="Present"
         >
-          <p className="vertical-timeline-element-title">Internship at DMM Web Camp</p>
+          <p className="vertical-timeline-element-title">Internship at DMM Web Camp (from 2023, Sep)</p>
           <h3>Serving as a Ruby on Rails mentor</h3>
           <h3>Gained valuable teaching experience and deepened my understanding of Ruby on Rails</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ background: "#2CBCE9", color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
-          date="2022, May - Present"
+          date="Present"
         >
-          <p className="vertical-timeline-element-title">Research Assistant at Osaka University</p>
+          <p className="vertical-timeline-element-title">Research Assistant at Osaka University (from 2022, May)</p>
           <h3>Creating image classification models</h3>
           <h3>Made visualizations showcasing the learning progress</h3>
         </VerticalTimelineElement>
@@ -49,7 +49,7 @@ const MyTimeline = () => {
         >
           <p className="vertical-timeline-element-title">Internship at DIMAAG-AI</p>
           <h3>AI engineer working on a face recognition app</h3>
-          <h3>Developed a face recognition app visualizing emotions</h3>
+          <h3>Developed a Desktop application visualizing emotions</h3>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement

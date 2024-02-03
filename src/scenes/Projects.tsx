@@ -15,7 +15,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, body }) => {
+const Project = ({ title, body, skills }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -27,6 +27,8 @@ const Project = ({ title, body }) => {
         <p className="mt-7">
           {body}
         </p>
+        <br />
+        <h3><p>Skills:</p>{skills}</h3>
       </div>
       <img src={`${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
@@ -71,32 +73,20 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SOLID KNOWLEDGE IN BACKEND
-          </div>
+
           <a href="https://pomotimer-g5gj.onrender.com/" target="_blank" rel="noreferrer">
-            <Project title="Project 1" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
+            <Project title="Project 1" body="This is a pomodoro timer app that keeps you focused on your study/work" skills="Ruby on Rails, Google authentication, postgresql"/>
+          </a>
+          <a href="https://github.com/Murasso/emotion-recoginition" target="_blank" rel="noreferrer">
+          <Project title="Project 2" body="A Desktop app to analize your facial emotion using deep learning model" skills="Python, Pytorch,kivy,Opencv"/>
           </a>
 
-          <Project title="Project 2" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
-
+          <Project title="Project 3" body="Visualization of an image recoginition model" skills="Python, Pytorch"/>
           {/* ROW 2 */}
-          <Project title="Project 3" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
-          <Project title="Project 4" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
-          <Project title="Project 5" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
 
-          {/* ROW 3 */}
-          <Project title="Project 6" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
-          <Project title="Project 7" body="This is a pomodoro timer app that keeps you focused on your study/work"/>
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+
+
+
         </motion.div>
       </div>
     </section>
