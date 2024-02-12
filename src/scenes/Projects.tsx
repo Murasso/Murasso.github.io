@@ -83,6 +83,9 @@ const Projects = () => {
 
           <Project title="Project 3" body="Visualization of an image recoginition model" skills="Python, Pytorch"/>
           {/* ROW 2 */}
+          <a href="https://cms-workout-snowy-butterfly-6906.fly.dev/" target="_blank" rel="noreferrer">
+          <Project title="Project 4" body="A fitness app to keep track of your workout" skills="PHP, Laravel, chart.js"/>
+          </a>
 
 
 
