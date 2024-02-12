@@ -28,7 +28,7 @@ const MyTimeline = () => {
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
           date="Present"
         >
-          <p className="vertical-timeline-element-title">Internship at DMM Web Camp (from 2023, Sep)</p>
+          <p className="text-black vertical-timeline-element-title">Internship at DMM Web Camp (from 2023, Sep)</p>
           <h3>Serving as a Ruby on Rails mentor</h3>
           <h3>Gained valuable teaching experience and deepened my understanding of Ruby on Rails</h3>
         </VerticalTimelineElement>
