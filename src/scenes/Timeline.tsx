@@ -20,7 +20,7 @@ const MyTimeline = () => {
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
           date="Present"
         >
-          <p className="vertical-timeline-element-title">Senior studying math at Osaka University (from 2019)</p>
+          <p className="text-black vertical-timeline-element-title">Senior studying math at Osaka University (from 2019)</p>
           <h3 className="vertical-timeline-element-subtitle">Specializing in Martingale theory and Probability theory</h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -37,7 +37,7 @@ const MyTimeline = () => {
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
           date="Present"
         >
-          <p className="vertical-timeline-element-title">Research Assistant at Osaka University (from 2022, May)</p>
+          <p className="text-black vertical-timeline-element-title">Research Assistant at Osaka University (from 2022, May)</p>
           <h3>Creating image classification models</h3>
           <h3>Made visualizations showcasing the learning progress</h3>
         </VerticalTimelineElement>
@@ -47,7 +47,7 @@ const MyTimeline = () => {
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
           date="2022, Aug - Sep"
         >
-          <p className="vertical-timeline-element-title">Internship at DIMAAG-AI</p>
+          <p className="text-black vertical-timeline-element-title">Internship at DIMAAG-AI</p>
           <h3>AI engineer working on a face recognition app</h3>
           <h3>Developed a Desktop application visualizing emotions</h3>
         </VerticalTimelineElement>
@@ -57,7 +57,7 @@ const MyTimeline = () => {
           contentArrowStyle={{ borderRight: '7px solid #2CBCE9' }}
           date="2022, Sep - Oct"
         >
-          <p className="vertical-timeline-element-title">Internship at Kuzen</p>
+          <p className="text-black vertical-timeline-element-title">Internship at Kuzen</p>
           <h3>Worked on a language model for a chat app</h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
