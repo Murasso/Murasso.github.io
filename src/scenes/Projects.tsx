@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          During my university years, I worked on several projects, including personal ones and projects at internship companies.
+          During my university years, I worked on several projects, including personal ones and the ones I worked on at my internships.
         </p>
       </motion.div>
 
