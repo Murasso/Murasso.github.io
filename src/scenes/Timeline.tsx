@@ -58,7 +58,7 @@ const MyTimeline = () => {
           date="2022, Sep - Oct"
         >
           <p className="text-black vertical-timeline-element-title">Internship at Kuzen</p>
-          <h3>Worked on a language model for a chat app</h3>
+          <h3>Worked on a language model for a chat bot</h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
